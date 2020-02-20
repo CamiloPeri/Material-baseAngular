@@ -1,0 +1,30 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <div style=" width: 196px; border-bottom: 2px solid black;
+}">
+      <h3> Base Angular Material </h3>
+    </div>
+    
+
+
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+
+    <ul>
+      <li>Componente 1</li>
+      <li>Componente 2</li>
+      <li>Componente 3</li>
+    </ul>
+    <!-- <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button> -->
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <i class="material-icons">
+        list
+        </i>
+    </button>
+  </div>
+
+</mat-drawer-container>
